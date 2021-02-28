@@ -33,5 +33,4 @@ class GrocerySpider(scrapy.Spider):
                     'price': self.process_price(product_price_value, product_price_decimal),
                     'price_per_unit': product.xpath('./div[contains(@class, "box--description")]/div[@class="box--price"]/span[@class="box--baseprice"]/text()').get(),
                 }
-
-
+                
