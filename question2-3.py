@@ -8,10 +8,12 @@ product_storage_string_raw = '''
 </script>'''
 
 # option spaces before and after space
+# make sure that [] are included in the string
 # second one taken to ignore declaration
 product_storage_parsed = re.findall("products_storage ?= ?(?=\[)(.*?)(?<=\])", product_storage_string_raw)[1]
 product_storage_json = json.loads(product_storage_parsed)
 
+# these expressions could be used to build a JSON object
 # prices = list(map(float, re.findall('"price":(\d+.\d+)', product_storage_string_raw)))
 # names = re.findall('"name":\"(.*?)\"', product_storage_string_raw)
 # ids = re.findall('"id":\"(.*?)\"', product_storage_string_raw)
