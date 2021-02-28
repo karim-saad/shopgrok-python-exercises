@@ -1,10 +1,10 @@
-# shopgrok-python-exercises
+# ShopGrok Python Exercises
 
 Python exercises for ShopGrok.
 
 ## Regex Questions
 
-Explanations added in the actual files
+Further explanation added in comments of actual files.
 
 ### Question 2.1
 
